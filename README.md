@@ -30,10 +30,13 @@ FILES:
 3. main.py - main python file, processes the data, provides functions:
 
 	get_best_features():
+
 		Reduces the number of features used by the model.
-		function takes train features, train labels and test features and returns transformed train and test features.
+
+		function takes train features, train labels and test features
 		parameter k specifies the desired number of features
-		parameter print_msg specifies if system messages are to be printed
+		parameter print_msg specifies if system messages are to be printed 
+		returns transformed train and test features.
 
 
 	get_best_features():
