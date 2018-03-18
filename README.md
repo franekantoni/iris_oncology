@@ -23,27 +23,30 @@ Missing attribute values: none
 Class distribution: 357 benign, 212 malignant
 
 
+FILES:
+
+1. data.csv - Breast Cancer Wisconsin (Diagnostic) Data Set
+2. feature_format.py - helper functions provided by Udacity for the ud120 course
+3. main.py - main python file, processes the data, provides functions:
+
+	get_best_features():
+		Reduces the number of features used by the model.
+		function takes train features, train labels and test features and returns transformed train and test features.
+		parameter k specifies the desired number of features
+		parameter print_msg specifies if system messages are to be printed
 
 
-FUNCTIONS:
+	get_best_features():
 
-get_best_features():
-	Reduces the number of features used by the model.
-	function takes train features, train labels and test features and returns transformed train and test features.
-	parameter k specifies the desired number of features
-	parameter print_msg specifies if system messages are to be printed
+		Trains two models: random forest and SVC
 
+		function takes train features, train labels, test features, test labels, 
+		nuber of iterations of evaluating models,
+		accuracy_test parameter specifies if testing should be performed
+		*models- names of sklearn models to train or test
 
-get_best_features():
+		returns list of trained clasifiers
 
-	Trains two models: random forest and SVC
-
-	function takes train features, train labels, test features, test labels, 
-	nuber of iterations of evaluating models,
-	accuracy_test parameter specifies if testing should be performed
-	*models- names of sklearn models to train or test
-
-	returns list of trained clasifiers
 
 
 
